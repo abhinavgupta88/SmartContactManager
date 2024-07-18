@@ -1,17 +1,25 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="Base::layout(~{::section})">
 <head>
-	<meta charset="UTF-8" />
-	<title>Home Page</title>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-	<section class="banner d-flex justify-content-center align-items-center">
-		<div class="text-center">
-			<h1 class="font-weight-bold">Smart Contact Manager</h1>
-			<p>Start Collecting your contacts in very smarter way. We provide
-			very efficient and smarter way of handling contact </p>
-			<button class="btn btn-outline-success btn-lg text-white">Get Started</button>
-		</div>
-	</section>
+    <section class="banner d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="font-weight-bold">Smart Contact Manager</h1>
+            <p>Start collecting your contacts in a very smart way. We provide a very efficient and smart way of handling contacts.</p>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="/signin" class="btn btn-outline-success btn-lg text-white">Login</a>
+                </div>
+                <div class="col-auto">
+                    <a href="/signup" class="btn btn-outline-primary btn-lg text-white">Signup</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
